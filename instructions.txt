@@ -1,0 +1,33 @@
+Instructions:
+
+1.start the web server:
+(Install apache env (I used XAMPP) in case you dont have)
+
+2. Download/clone the project and place it inside the web server.
+Such that the "mono" folder will be inside your main webserver folder (htdocs in XAMPP). 
+the path to the main page is - http://localhost/mono/src/index.php
+
+3.1. Data base 
+In order to config the your local db - please open the src/db.php file with text editor and set
+your local db options.
+3.2 Start your local db server and create the db using the dump file called monolithDump.sql
+
+4.Demo to client:
+Enter your browser and enter the following url
+http://localhost/mono/src/index.php
+
+--------------------
+Notes:
+1. For simulate the recovery by email please install a local mail server (which in your case i assume that is already configured)  and start the local mail server on port 25.
+
+-------- 
+Main features:
+1. Cookies - The website maintain a session info about the user and allow him to return his profile page
+even after closing the tab.
+Furthermore see what happened if you just try to access the profile page without loggin.
+
+2. information table -
+Just for extending my website a alittle bit , i added a table in the sql database which records the user's actions in the server.
+the table records the username , timestamp and what type of action he did ("LOGIN","REGISTER" and more..)
+
+3. Recovery by mail
