@@ -4,8 +4,10 @@ Instructions:
 (Install apache env (I used XAMPP) in case you dont have)
 
 2. Download/clone the project and place it inside the web server.
-Such that the "mono" folder will be inside your main webserver folder (htdocs in XAMPP). 
+Such that all the files will be under "mono" 
+folder and inside your main webserver folder (htdocs in XAMPP).
 the path to the main page is - http://localhost/mono/src/index.php
+(make sure the your directory name is mono and not mono-master as downloded with the zip file)
 
 3.1. Data base 
 In order to config the your local db - please open the src/db.php file with text editor and set
